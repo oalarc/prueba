@@ -17,8 +17,22 @@ namespace WinProg{
 
 class Login : public Gtk::Window{
 public:
+	/**
+	 * @brief Constructor
+	 */
 	Login();
+
+	/**
+	 * @brief Destructor
+	 */
 	virtual ~Login();
+
+	/**
+	 * @brief ejecuta el autentificado del login
+	 *
+	 * @param usuario es el campo de texto del cual se extraerá el valor
+	 * @param clave es el campo de texto del cual se extraerá el valor
+	 */
 	void doLogin(Gtk::Entry* usuario, Gtk::Entry* clave );
 };
 

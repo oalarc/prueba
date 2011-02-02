@@ -16,8 +16,18 @@ using namespace Gtk;
 
 namespace WinProg{
 
+/**
+ * Estructura _fullMaps permite un manejo sencillo de mapas para Gdk::Pixbuf
+ */
 struct _fullMaps {
+	/**
+	 * @brief tamaño del mapa
+	 */
 	int size;
+
+	/**
+	 * @brief puntero al arreglo del mapa
+	 */
 	const guint8* maps;
 } typedef fullMaps;
 
@@ -73,18 +83,37 @@ public:
 	 */
 	void button1_onClick();
 
+	/**
+	 * @brief LLena e inicializa el ToolItem Usuarios
+	 */
 	ToolItemGroup* fillButtonsUsers();
 
+	/**
+	 * @brief LLena e inicializa el ToolItem Clientes
+	 */
 	ToolItemGroup* fillButtonsClients();
 
+	/**
+	 * @brief LLena e inicializa el ToolItem Reportes
+	 */
 	ToolItemGroup* fillButtonsReports();
 
+	/**
+	 * @brief LLena e inicializa el ToolItem Codigos
+	 */
 	ToolItemGroup* fillButtonsCodes();
 
+	/**
+	 * @brief LLena e inicializa el ToolItem Respaldo
+	 */
 	ToolItemGroup* fillButtonsBackup();
 
 	/*
 	 * @brief Construye la paleta de herramientas
+	 *
+	 * @param font el estilo de fuente para los botones de la paleta
+	 *
+	 * @return la paleta de herramientas lista
 	 */
 	ToolPalette* buildPalette(Pango::FontDescription* font);
 
