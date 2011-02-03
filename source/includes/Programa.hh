@@ -31,6 +31,9 @@ struct _fullMaps {
 	const guint8* maps;
 } typedef fullMaps;
 
+/**
+ * @brief Ventana principal de administración
+ */
 class Programa : public Glib::Object{
 private:
 	int W_WIDTH;

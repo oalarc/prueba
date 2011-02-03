@@ -119,6 +119,8 @@ Login::~Login(){
 }
 
 void Login::doLogin(Gtk::Entry* usuario, Gtk::Entry* clave){
+
+	//TODO: borrar printf
 	std::cout << usuario->get_text() << std::endl;
 	std::cout << clave->get_text() << std::endl;
 
