@@ -108,8 +108,13 @@ public:
 	 */
 	ToolItemGroup* fillButtonsBackup();
 
-	/*
+	/**
 	 * @brief Construye la paleta de herramientas
+	 *
+	 * Esta es una descripción de como es la fuente a ocupar y ese generada
+	 * previamente en addElementsAtWindow
+	 *
+	 * @see addElementsAtWindow
 	 *
 	 * @param font el estilo de fuente para los botones de la paleta
 	 *

@@ -122,12 +122,32 @@ void Login::doLogin(Gtk::Entry* usuario, Gtk::Entry* clave){
 	std::cout << usuario->get_text() << std::endl;
 	std::cout << clave->get_text() << std::endl;
 
-	//hide_all();
 
-	destroy_();
+	if(usuario->get_text().compare("admin") == 0){
 
-    Programa* pa = new Programa(800, 600, false, "Sistema Peaje");
-	pa->initializeWindow();
-	pa->getWindow()->show_all();
 
+
+		Programa* pa = new Programa(800, 600, false, "Sistema Peaje");
+		pa->initializeWindow();
+		pa->getWindow()->show_all();
+		delete this;
+	}
+	else{
+		Gtk::MessageDialog* d = new MessageDialog("No se pudo acceder",
+				false, MESSAGE_WARNING, BUTTONS_CLOSE, true);
+		d->set_title("Problemas al acceder");
+		d->set_secondary_text("El usuario o la clave son incorrectos, "
+				"intente nuevamente");
+		int opcion = d->run();
+
+		switch(opcion)
+		{
+			case(Gtk::RESPONSE_CLOSE):
+			{
+				delete d;
+
+			}
+
+		}
+	}
 }
