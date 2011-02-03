@@ -1,4 +1,4 @@
-/*
+/**
  * @file Main.cc
  *
  * @author Orlando Alarcon <orlando.alarcon.g@gmail.com>

@@ -1,3 +1,8 @@
+/**
+ * @file Resources.hh
+ *
+ * @author Orlando Alarcon <orlando.alarcon.g@gmail.com>
+ */
 #ifndef __W_RESOURCES_
 #define __W_RESOURCES_ 1
 /* GdkPixbuf RGBA C-Source image dump 1-byte-run-length-encoded */

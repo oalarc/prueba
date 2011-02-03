@@ -1,4 +1,4 @@
-/*
+/**
  * @file Programa.hh
  *
  * @author Orlando Alarcon <orlando.alarcon.g@gmail.com>
@@ -14,10 +14,16 @@
 using namespace std;
 using namespace Gtk;
 
+/**
+ * @brief Espacio de nombres principal
+ *
+ * La totalidad del proyecto esta contenido dentro de este espacio
+ * (solo con fines de estructuracion)
+ */
 namespace WinProg{
 
 /**
- * Estructura _fullMaps permite un manejo sencillo de mapas para Gdk::Pixbuf
+ * @brief [Estructura] permite un manejo sencillo de mapas para Gdk::Pixbuf
  */
 struct _fullMaps {
 	/**
@@ -32,7 +38,7 @@ struct _fullMaps {
 } typedef fullMaps;
 
 /**
- * @brief Ventana principal de administración
+ * @brief [Clase] Ventana principal de administración
  */
 class Programa : public Glib::Object{
 private:

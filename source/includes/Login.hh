@@ -16,7 +16,7 @@ using namespace Gtk;
 namespace WinProg{
 
 /**
- * @brief Ventana encargada de generar la pantalla de ingreso
+ * @brief [Clase] Ventana encargada de generar la pantalla de ingreso
  *
  * Clase que Herda de Gtk::Window, proporciona la interfaz pricipal para el
  * acceso al sistema
